@@ -1,6 +1,6 @@
 /*
 * Property of David Kimball, Computer Science program National Universisty 
-* CSC262 homework two question four part one
+* CSC262 homework two question five part one
 */
 
 class Bicycle
@@ -10,14 +10,15 @@ class Bicycle
     String bodyColor = "";
     int numberOfGears;
 
-    public Bicycle(double l1, double l2, double r1, double r2, String color, int gears)
+    public Bicycle(double w1, double w2, double r1, double r2, String color, int gears)
     {
-        wheelOne = new Wheel(l1, r1); 
-        wheelTwo = new Wheel(l2, r2);
+        wheelOne = new Wheel(w1, r1); 
+        wheelTwo = new Wheel(w2, r2);
         
         bodyColor = color; 
         numberOfGears = gears;
     }
+
 /************************* setters  **********************************/
     public void setBodyColor(String m_color)
     {
@@ -63,10 +64,23 @@ class Bicycle
         return wheelTwo;
     }
 
+/******************* print method **********************************/
+
+    public void printBicycle()
+    {
+        System.out.print("The Bicycles color is: " + this.bodyColor + "\n" );
+        System.out.print("It has: " + this.numberOfGears + " gears \n" );
+        System.out.print("The radius of the first wheel is: " + this.wheelOne.radius + "\n");
+        System.out.print("The width of the first wheel is: " + this.wheelOne.width + "\n");
+        System.out.print("The radius of the second wheel is: " + this.wheelTwo.radius + "\n");
+        System.out.print("The width of the second wheel is: " + this.wheelTwo.width + "\n");
+
+    }
+
 /************************** Main() *********************************/
 
     public static void main(String[] args)
     {
-        Bicycle first = new Bicycle(12.2, 9.8, 10.1, 8.7, "Red", 11);
+        
     }
 }

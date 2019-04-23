@@ -1,3 +1,8 @@
+/*
+* Property of David Kimball, Computer Science program National Universisty 
+* CSC262 homework two question five part two
+*/
+
 /************************ Wheel class ********************************/
 class Wheel
 {
